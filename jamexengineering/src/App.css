@@ -1,38 +1,541 @@
-.App {
-  text-align: center;
+/*======================================================GENERAL========================================================================*/
+.row{
+    /*min-height: 100px;*/
+    /*border: 2px solid yellow;*/
+}
+.col-sm-6{
+    /*border: 2px solid red;*/
+    /*min-height: 100px;*/
+}
+/*======== Navbar, Routing and Header ================================================================================================================================*/
+.Navbar {
+    max-height: 80px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+.logo {
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    width: 100px;
+    height: 90px;
+}
+.MenuIcon {
+    color: blue;
+    cursor: pointer;
+    padding-bottom: 50px;
+    padding-left: 50%;
+    font-size: 60px;
+}
+.NavItems {
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.NavItem {
+    text-decoration: none;
+    font-size: x-large;
+    color: #333;
+    padding-left: 6px;
+    border-left: 2px solid blue;
+}
+.NavItem:hover{
+    border-left: 10px solid lawngreen;
+}
+.sidebar {
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    /*max-height: 20%;*/
+    background-image: linear-gradient(white,whitesmoke,lightgrey);
+    transform: translateX(300px);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    align-items: center;
+}
+.sidebarOpen {
+    transform: translateX(0);
+}
+.NavItem_mini{
+    visibility: hidden;
+}
+.NavItem_mini_side{
+    visibility: visible;
+    border-left: 0;
+    font-size: x-large;
+    padding-top: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+}
+.NavItem_mini_side:hover{
+    border-bottom: 10px solid lawngreen;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*================================================================== PAGES ==========================================================================================================*/
+
+/*======================================================= HOME ================================================================================*/
+.home_body{
+    min-height: 2000px;
+    margin-top: 0;
+}
+.firstDivBackground{
+    background-image: url("./img/construction-site.jpg");
+    background-size: cover;
+    padding-top: 1px;
+    margin-top: -1px;
+    min-height: 800px;
+    width: 100%;
+}
+.sloganContainer{
+    margin-top: 180px;
+    margin-left: 100px;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 30px whitesmoke;
+}
+.blueDot{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+.slogan h1{
+    margin-left: 50px;
+}
+.intro p{
+    margin-left: 55px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+.sloganButton button{
+    margin-top: 8px;
+    margin-left: 60px;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+    border: 3px solid darkblue;
+}
+.sloganButton button:hover{
+    background-color: blue;
+    color: white;
+    width: 200px;
+    transition: all 0.3s;
+}
+.test{
+    background-color: white;
+    max-width: 600px;
+}
+.value{
+    background-color: grey;
+    min-height: 800px;
+    padding-top: 1px;
+    margin-top: -1px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: darkblue;
+}
+.valueHeader{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    margin-top: 0;
+    width: 100%;
+}
+.valueHeader h1{
+   /*color: darkblue;*/
+    font-size: xxx-large;
+    /*margin-bottom: -50px;*/
+}
+.valuePreamble{
+    width: 100%;
+    /*margin-top: -50px;*/
+}
+.valuePreamble p{
+    /*color: darkblue;*/
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.valueList .text-responsive{
+    /*display: flex;*/
+    /*font-size: calc(100% +1vw +1vh);*/
+}
+.valueListCard{
+    background-color: white;
+    /*width: 100%;*/
+}
+.valueListImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.valueListImg img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.service{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.redBack{
+    min-height: 400px;
+    min-width: 700px;
+    /*margin-left: 15%;*/
+    margin-top: 10px;
+    background-color: darkblue;
+    position: absolute;
+}
+.redBack2{
+    min-height: 400px;
+    min-width: 200px;
+    margin-left: 60%;
+    margin-top: 300px;
+    background-color: darkblue;
+    position: absolute;
+}
+.servicePic{
+    background-image: url("./img/spark.jpg");
+    background-size: cover;
+    min-height:500px;
+    min-width: 700px;
+    margin-left:12%;
+    margin-top: 10%;
+    position: absolute;
+}
+.serviceCard{
+    position: absolute;
+    width: 700px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.serviceCard .card .card-body{
+    background-color: black;
+    color: white;
+    /*position: absolute;*/
+}
+.backgroundGrey1{
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+}
+.backgroundWhite{
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+.backgroundGrey2{
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+}
+.f{
+    position: absolute;
+}
+.serviceBox{
+    min-height: 400px;
+    width: 60%;
+    /*margin-left: 15%;*/
+    margin-top: 40px;
+    background-color: darkblue;
+    position: absolute;
+}
+.serviceBox .card-body{
+    background-color: darkblue;
+}
+.help{
+    /*background-color: black;*/
+    color: white;
+    position: absolute;
+    margin-left: 15%;
+}
+.help .card-body{
+    background-color: black;
+}
+.d{
+    margin-top: 150px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: grey;
+}
+.pImg img{
+    width: 100%;
+    height: 100%;
+}
+.l{
+    margin-top: 30px;
+    border-radius: 120px;
+    /*padding-right: 20px;*/
+    /*padding-left: 20px;*/
+}
+.l .card-body{
+    border-radius: 120px;
+}
+/*============================================================== CONTACT =======================================================================================================*/
+.contactTop{
+    background-image: url("./img/question.jpg");
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    /*margin-top: 10px;*/
+    color: white;
+    /*background-repeat: no-repeat;*/
+}
+.contactTop .card{
+    margin-top: 10em;
+    max-width: 600px;
+    margin-left: 5em;
+    box-shadow: 0 0 60px black;
+}
+.contactTop .card .card-body{
+    background-color: black;
+}
+.blue{
+    color: blue;
+}
+.contactMid{
+    background-color: grey;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.contactOptions{
+    /*margin-top: ;*/
+
+}
+.contactOptionsList{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    height: 300px;
+}
+.contactIcon i{
+    font-size: x-large;
+}
+.contactBottom{
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: darkgrey;
+}
+.colCard .card-body{
+    background-color: darkgrey;
+}
+/*=====================================================================================SERVICES=========================================================================*/
+.serviceTop{
+    background-image: url("./img/pole.jpg");
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    /*margin-top: 10px;*/
+    color: black;
+    /*background-repeat: no-repeat;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.serviceTop .card{
+    margin-top: 15em;
+    max-width: 600px;
+    margin-left: 5em;
+    /*box-shadow: 0 0 60px black;*/
+    background-color: transparent;
+}
+.serviceTop .card .card-body{
+    background-color: transparent;
+}
+.serviceTop .card .card-body h1{
+    font-size: 100px;
+}
+.serviceSub{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: grey;
+}
+.serviceSub .card{
+    margin-top: 20px;
+    background-color: transparent;
+}
+.serviceSub .card .card-body{
+    /*background-color: rgba(255,255,255,0.0);*/
+    box-shadow: 0 0 10px black;
+    background-color: transparent;
+}
+.serviceContactBtn button{
+    border: 2px solid white;
+    margin-left: 15px;
+    /*background-color: transparent;*/
+    border-radius: 15px;
+}
+.serviceContactBtn button:hover{
+    background-color: white;
+    width: 150px;
+}
+.serviceListing{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: grey;
+}
+.serviceListing .col-sm-12 .card{
+    margin-top: 20px;
+}
+.serviceListing .card{
+    height: 500px;
+    overflow-y: scroll;
+}
+.serviceListing .card .card-body{
+    background-color: grey;
+}
+.serviceListing .card .card-body img{
+    width: 100%;
+    /*object-fit: cover;*/
+}
+.serviceListing .card::-webkit-scrollbar{
+    width: 10px;
+}
+.serviceListing .card::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, dimgrey);
+    border-radius: 50px;
+}
+.serviceListing .card::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 50px;
+}
+.serviceListing .card::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, coral);
+    border-radius: 50px;
+}
+.serviceListing .card::-webkit-scrollbar-track:hover{
+    background-color: grey;
+    border-radius: 50px;
+}
+/*============================================================================VALUES======================================================================*/
+.valueTop{
+    background-image: url("./img/question.jpg");
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+    /*margin-top: 10px;*/
+    color: white;
+    /*background-repeat: no-repeat;*/
+}
+.valueTop .card{
+    margin-top: 200px;
+}
+.valueBottom .card-title{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+    /*text-decoration: underline;*/
+}
+.under{
+    height: 25px;
+    margin-top: 10px;
+    background-image: linear-gradient(lightgray,white,grey);
+    /*background-color: darkblue;*/
+}
+/*===== Media query for smaller screens ========================================================================================================================*/
+@media (max-width: 1000px) {
+    .serviceCard{
+        margin-left: 0;
+    }
+}
+@media (max-width: 800px) {
+    .servicePic{
+        visibility: collapse;
+    }
+}
+@media (max-width: 768px) {
+    /*==================================================Header stuff===============================*/
+    .MenuIcon{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .NavItems{
+        visibility: hidden;
+    }
+    .sidebar {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        /*max-height: 60%;*/
+        transform: translateX(-300px);
+    }
+    .sidebarOpen {
+        transform: translateX(0);
+    }
+    .NavItem_mini{
+        visibility: visible;
+        border-left: 0;
+        font-size: x-large;
+        padding-top: 20px;
+        text-decoration: none;
+        border-bottom: 2px solid blue;
+    }
+    .NavItem_mini:hover{
+        border-bottom: 10px solid lawngreen;
+    }
+    .NavItem_mini_side{
+        visibility:collapse;
+        display: none;
+    }
+    /*====================================Home stuff=========================================*/
+    .sloganContainer{
+        margin-left: 0;
+    }
+    /*==========================================Contact stuff====================================*/
+    .contactTop .card{
+        margin-left: 0;
+    }
+    .contactOptionsList{
+        height: auto;
+    }
+    /*==========================================Service stuff===========================*/
+    .serviceTop .card .card-body h1{
+        font-size: xxx-large;
+    }
+    .serviceListing .card{
+        height: auto;
+        overflow-y:auto;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*================================================================================== ANIMATIONS AND TRANSITIONS =================================================================*/
+/*note the hidden has to be on top of the show*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hiddenRight{
+    opacity: 0;
+    /*visibility: collapse;*/
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.showRight {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
-.App-link {
-  color: #61dafb;
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+    .hiddenRight{
+        transition: none;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
