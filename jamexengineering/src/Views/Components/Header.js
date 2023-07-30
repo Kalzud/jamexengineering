@@ -164,7 +164,7 @@ const Header = () => {
                                         </NavLink>
                                     </Grid>
                                     <Grid item xs={3}>
-                                        <NavLink className="NavItem" to="/services" style={navLinkStyles}>
+                                        <NavLink className="NavItem" to="/service" style={navLinkStyles}>
                                             Services
                                         </NavLink>
                                     </Grid>
@@ -200,7 +200,7 @@ const Header = () => {
                             <NavLink className="NavItem_mini" to="/about" style={navLinkStyles}>
                                 About
                             </NavLink>
-                            <NavLink className="NavItem_mini" to="/services" style={navLinkStyles}>
+                            <NavLink className="NavItem_mini" to="/service" style={navLinkStyles}>
                                 Services
                             </NavLink>
                             <NavLink className="NavItem_mini" to="/contact" style={navLinkStyles}>
@@ -217,7 +217,7 @@ const Header = () => {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/about" element={<About />} />
-                    <Route exact path="/services" element={<Services />} />
+                    <Route exact path="/service" element={<Services />} />
                     <Route exact path="/contact" element={<Contact />} />
                     <Route exact path="/project" element={<Projects />} />
                     <Route exact path="/value" element={<Values />} />

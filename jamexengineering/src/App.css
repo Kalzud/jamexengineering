@@ -3,10 +3,14 @@
     /*min-height: 100px;*/
     /*border: 2px solid yellow;*/
 }
-.col-sm-6{
+.col-sm-12{
     /*border: 2px solid red;*/
     /*min-height: 100px;*/
 }
+/**{*/
+/*    overflow-x: hidden;*/
+/*    overflow-scrolling: auto;*/
+/*}*/
 /*======== Navbar, Routing and Header ================================================================================================================================*/
 .Navbar {
     max-height: 80px;
@@ -87,6 +91,7 @@
     min-height: 2000px;
     margin-top: 0;
 }
+/*================================== 1st section ============================*/
 .firstDivBackground{
     background-image: url("./img/construction-site.jpg");
     background-size: cover;
@@ -130,10 +135,7 @@
     width: 200px;
     transition: all 0.3s;
 }
-.test{
-    background-color: white;
-    max-width: 600px;
-}
+/*====================================2nd Section=======================*/
 .value{
     background-color: grey;
     min-height: 800px;
@@ -146,124 +148,200 @@
 .valueHeader{
     /*display: flex;*/
     /*justify-content: center;*/
-    margin-top: 0;
+    /*margin-top: 0;*/
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valueHeader .card{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.valueHeader .card-body{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
 .valueHeader h1{
    /*color: darkblue;*/
     font-size: xxx-large;
     /*margin-bottom: -50px;*/
 }
-.valuePreamble{
-    width: 100%;
+.valuePreamble .card{
+    background-color: transparent;
+    /*width: 100%;*/
     /*margin-top: -50px;*/
 }
-.valuePreamble p{
-    /*color: darkblue;*/
-    padding-right: 20px;
-    padding-left: 20px;
+.valuePreamble .card-body{
+    background-color: transparent;
 }
-.valueList .text-responsive{
-    /*display: flex;*/
-    /*font-size: calc(100% +1vw +1vh);*/
+.valueLinkBtn{
+    margin-top: 5px;
 }
-.valueListCard{
+.valueLinkBtn button{
+    border: 2px solid white;
+    margin-left: 15px;
+    /*background-color: transparent;*/
+    border-radius: 15px;
+}
+.valueLinkBtn button:hover{
     background-color: white;
+    width: 200px;
+}
+/*.valuePreamble p{*/
+/*    !*color: darkblue;*!*/
+/*    padding-right: 20px;*/
+/*    padding-left: 20px;*/
+/*}*/
+.valueList .card{
+    background-color: grey;
+    margin-top: 20px;
+    height: 400px;
+    overflow-y: scroll;
     /*width: 100%;*/
 }
-.valueListImg{
+.valueListCard::-webkit-scrollbar{
+    width: 10px;
+}
+.valueListCard::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, dimgrey);
+    border-radius: 50px;
+}
+.valueListCard::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 50px;
+}
+.valueListCard::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, coral);
+    border-radius: 50px;
+}
+.valueListCard::-webkit-scrollbar-track:hover{
+    background-color: grey;
+    border-radius: 50px;
+}
+/*.valueListImg{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.valueListImg img{
+    width: 100%;
+    height: 90px;
+    /*border-radius: 50%;*/
+}
+.valueLinkBtn2{
+    margin-top:20px;
+    margin-bottom:20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.valueListImg img{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+.valueLinkBtn2 button{
+    border: 2px solid white;
+    margin-left: 15px;
+    /*background-color: transparent;*/
+    border-radius: 15px;
 }
-.service{
-    padding-right: 50px;
-    padding-left: 50px;
-}
-.redBack{
-    min-height: 400px;
-    min-width: 700px;
-    /*margin-left: 15%;*/
-    margin-top: 10px;
-    background-color: darkblue;
-    position: absolute;
-}
-.redBack2{
-    min-height: 400px;
-    min-width: 200px;
-    margin-left: 60%;
-    margin-top: 300px;
-    background-color: darkblue;
-    position: absolute;
-}
-.servicePic{
-    background-image: url("./img/spark.jpg");
-    background-size: cover;
-    min-height:500px;
-    min-width: 700px;
-    margin-left:12%;
-    margin-top: 10%;
-    position: absolute;
-}
-.serviceCard{
-    position: absolute;
-    width: 700px;
-    margin-left: 300px;
-    margin-top: 100px;
-}
-.serviceCard .card .card-body{
-    background-color: black;
-    color: white;
-    /*position: absolute;*/
-}
-.backgroundGrey1{
-    background-color: grey;
-    width: 100%;
-    height: 100px;
-}
-.backgroundWhite{
+.valueLinkBtn2 button:hover{
     background-color: white;
-    width: 100%;
-    height: 400px;
+    width: 1000px;
 }
-.backgroundGrey2{
+/*===========================3rd section============================*/
+.service{
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: grey;
-    width: 100%;
-    height: 200px;
 }
-.f{
-    position: absolute;
-}
-.serviceBox{
+.blueBox{
     min-height: 400px;
     width: 60%;
     /*margin-left: 15%;*/
     margin-top: 40px;
-    background-color: darkblue;
+    background-image: url("./img/geometric.jpg");
+    /*background-color: darkblue;*/
     position: absolute;
 }
-.serviceBox .card-body{
-    background-color: darkblue;
+
+.orangeBox{
+    width: 60%;
+    min-height: 400px;
+    margin-top: 500px;
+    margin-left: 35%;
+    background-image: url("./img/orange.jpg");
+    position: absolute;
 }
-.help{
+.service .card{
     /*background-color: black;*/
     color: white;
-    position: absolute;
-    margin-left: 15%;
+    /*position: absolute;*/
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: transparent;
 }
-.help .card-body{
-    background-color: black;
+.service .card-body{
+    /*background-color: black;*/
+    background-color: rgba(0,0,0,0.9);
+
 }
-.d{
-    margin-top: 150px;
-    padding-left: 90px;
-    padding-right: 90px;
+.service .card-title{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-decoration:underline;
+}
+.service button{
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-left: 12px;
+    margin-top:5px;
+    color: orangered;
+}
+.service button:hover{
+    background-color: white;
+    width: 200px
+}
+.helpLink{
+    background-color: transparent;
+}
+.helpLink .card-body{
+    background-color: transparent;
+}
+.helpLink .card-title{
+    font-size: xxx-large;
+    text-decoration: none;
+    color: white;
+}
+/*.helpLink .card-title:hover{*/
+/*    text-decoration: none;*/
+/*    !*background-color: white;*!*/
+/*    !*color: black;*!*/
+/*    !*box-shadow: 0 0 5px white;*!*/
+/*}*/
+/*a:hover{*/
+/*    text-decoration: none;*/
+/*}*/
+/*===========================4th section============================*/
+.project{
+    /*margin-top: 150px;*/
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: grey;
+}
+.project-title{
+    margin-top: 50px;
+    width: 100%;
+    background-color: grey;
+}
+.project-title .card-body{
+    background-color: grey;
+}
+.project-title .card-title{
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    color:black;
 }
 .pImg img{
     width: 100%;
@@ -276,10 +354,147 @@
     /*padding-left: 20px;*/
 }
 .l .card-body{
-    border-radius: 120px;
+    /*border-radius: 120px;*/
+}
+/*================================================================ABOUT=============================================================================*/
+.aboutPage{
+    background-color: grey;
+    color: darkblue;
+    /*border: 3px solid yellow;*/
+}
+.aboutPage .card {
+    background-color: grey;
+}
+.aboutPage .card-body{
+    background-color: grey;
+}
+.aboutPage .card-title{
+    font-size: xxx-large;
+}
+/*==============================================Section 1==*/
+.aboutPage .card{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.aboutTop .top{
+    background-image: url("./img/bridge.jpg");
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    /*margin-top: 10px;*/
+    /*color: white;*/
+    /*background-repeat: no-repeat;*/
+}
+.aboutTop .insideTop{
+    margin-top: 10em;
+    max-width: 600px;
+    max-height: 300px;
+    margin-left: 5em;
+}
+/*=====================================Section 3==*/
+.target .card{
+    background-color: transparent;
+    margin-top: 9em;
+    margin-left: 17%;
+    max-width: 800px;
+    color: white;
+    border: none;
+}
+.target .card-body{
+    background-color: rgba(0,0,0,0.9);
+}
+.target .vision{
+    margin-left: 0;
+    max-width: fit-content;
+}
+.targetDiv1{
+    min-height: 800px;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 40px;
+    background-image: url("./img/lightBulb.jpg");
+    background-size: cover;
+    /*background-color: darkgrey;*/
+    position: absolute;
+}
+.targetDiv2{
+    min-height: 800px;
+    width: 60%;
+    margin-left: 12%;
+    margin-top: 60px;
+    background-color: coral;
+    position: absolute;
+}
+.targetDiv3{
+    min-height: 800px;
+    width: 60%;
+    margin-left: 14%;
+    margin-top: 80px;
+    background-image: url("./img/tower.jpg");
+    background-size: cover;
+    /*background-color: slategrey;*/
+    position: absolute;
+}
+.targetDiv4{
+    min-height: 800px;
+    width: 60%;
+    margin-left: 16%;
+    margin-top: 100px;
+    background-color: royalblue;
+    position: absolute;
+}
+.targetDiv5{
+    min-height: 800px;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 120px;
+    background-image: url("./img/home_work_pic.jpg");
+    background-size: cover;
+    /*background-color: dimgrey;*/
+    position: absolute;
+}
+.space{
+    min-height: 400px;
+}
+/*========================================Section 5==*/
+.directors{
+    justify-content: center;
+}
+.directorsHeading{
+    display: flex;
+    justify-content: center;
+}
+.directorsList{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.directors .card{
+    border: none;
+    color: darkblue;
+}
+.directorsList .card{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 200px;
+}
+.directorsList .card-body{
+    /*display: flex;*/
+    /*border: 2px solid green;*/
+    background-color: rgba(0,0,0,0.5);
+    /*width: 100%;*/
+}
+.directors .card-img-top{
+    padding-top: 0;
+}
+.directors .card-img-top img{
+    width: 100%;
 }
 /*============================================================== CONTACT =======================================================================================================*/
-.contactTop{
+.contactPage{
+    color: darkblue;
+}
+.contactTop .top{
     background-image: url("./img/question.jpg");
     background-size: cover;
     min-height: 400px;
@@ -288,14 +503,16 @@
     color: white;
     /*background-repeat: no-repeat;*/
 }
-.contactTop .card{
+.contactTop .insideTop{
     margin-top: 10em;
     max-width: 600px;
+    max-height: 300px;
     margin-left: 5em;
     box-shadow: 0 0 60px black;
 }
-.contactTop .card .card-body{
+.contactTop .insideTop .card-body{
     background-color: black;
+    /*max-height: 10px;*/
 }
 .blue{
     color: blue;
@@ -304,16 +521,20 @@
     background-color: grey;
     padding-left: 10%;
     padding-right: 10%;
+    /*justify-content: center;*/
 }
 .contactOptions{
     /*margin-top: ;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
 
 }
 .contactOptionsList{
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 80%;
-    height: 300px;
+    max-width: 90%;
+    height: 220px;
+    margin-left: 15px;
 }
 .contactIcon i{
     font-size: x-large;
@@ -327,7 +548,10 @@
     background-color: darkgrey;
 }
 /*=====================================================================================SERVICES=========================================================================*/
-.serviceTop{
+.servicePage{
+    color: darkblue;
+}
+.serviceTop .top{
     background-image: url("./img/pole.jpg");
     background-size: cover;
     min-height: 400px;
@@ -336,8 +560,7 @@
     color: black;
     /*background-repeat: no-repeat;*/
 }
-
-.serviceTop .card{
+.serviceTop .insideTop{
     margin-top: 15em;
     max-width: 600px;
     margin-left: 5em;
@@ -413,22 +636,51 @@
     border-radius: 50px;
 }
 /*============================================================================VALUES======================================================================*/
-.valueTop{
-    background-image: url("./img/question.jpg");
+.valuePage{
+    color: darkblue;
+}
+.valueTop .top{
+    background-image: url("./img/tower.jpg");
     background-size: cover;
-    min-height: 300px;
+    min-height: 400px;
     width: 100%;
     /*margin-top: 10px;*/
-    color: white;
+    color: black;
     /*background-repeat: no-repeat;*/
 }
-.valueTop .card{
-    margin-top: 200px;
+.valueTop .insideTop{
+    margin-top: 300px;
+    margin-left: 50px;
+    max-width: 600px;
+    background-color: rgba(255,255,255,0.2);
+    /*background-color: transparent;*/
+}
+.valueTop .card-body{
+    background-color: transparent;
+    /*font-size: xx-large;*/
+}
+.valueTop .card-body h2{
+    font-size: xxx-large;
+}
+.valueBottom{
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: darkgrey;
+}
+.valueBottom .card{
+    margin-top: 20px;
+    background-color: transparent;
+}
+.valueBottom .card-body{
+    background-color: transparent;
+    border-top: 2px solid grey;
+    /*border-right: 2px solid grey;*/
+    /*border-left: 2px solid grey;*/
 }
 .valueBottom .card-title{
     display: flex;
     justify-content: center;
-    font-size: xxx-large;
+    font-size: xx-large;
     /*text-decoration: underline;*/
 }
 .under{
@@ -439,17 +691,15 @@
 }
 /*===== Media query for smaller screens ========================================================================================================================*/
 @media (max-width: 1000px) {
-    .serviceCard{
-        margin-left: 0;
-    }
+
 }
 @media (max-width: 800px) {
-    .servicePic{
-        visibility: collapse;
+    .contactOptionsList{
+        height: 300px;
     }
 }
 @media (max-width: 768px) {
-    /*==================================================Header stuff===============================*/
+    /*==================================================Header small screen stuff===============================*/
     .MenuIcon{
         padding-top: 0;
         padding-left: 0;
@@ -483,18 +733,60 @@
         visibility:collapse;
         display: none;
     }
-    /*====================================Home stuff=========================================*/
+    /*====================================Home small screen stuff=========================================*/
     .sloganContainer{
         margin-left: 0;
     }
-    /*==========================================Contact stuff====================================*/
+    .valueList .card{
+        height: auto;
+        overflow-y: auto;
+    }
+    .valueLinkBtn2 button:hover{
+        width: auto;
+    }
+    .project-title .card-title{
+        font-size:xxx-large;
+    }
+    /*====================================About small screen stuff=========================================*/
+    .targetDiv1{
+        min-height: 800px;
+        width: 60%;
+        /*margin-left: 10%;*/
+        margin-top: 40px;
+        background-image: url("./img/lightBulb.jpg");
+        background-size: cover;
+        /*background-color: darkgrey;*/
+        position: absolute;
+    }
+    .targetDiv2{display: none}
+    .targetDiv3{display: none}
+    .targetDiv4{display: none}
+    .targetDiv5{
+        min-height: 800px;
+        width: 60%;
+        margin-left: 35%;
+        margin-top: 400px;
+        background-image: url("./img/home_work_pic.jpg");
+        background-size: cover;
+        /*background-color: dimgrey;*/
+        position: absolute;
+    }
+    .target .card{
+        margin-top: 5em;
+        margin-left: 0;
+    }
+    /*==========================================Contact small screen stuff====================================*/
     .contactTop .card{
         margin-left: 0;
     }
     .contactOptionsList{
         height: auto;
     }
-    /*==========================================Service stuff===========================*/
+    .contactTop .insideTop .card-body{
+        margin-left: 10px;
+        /*max-height: 10px;*/
+    }
+    /*==========================================Service small screen stuff===========================*/
     .serviceTop .card .card-body h1{
         font-size: xxx-large;
     }
