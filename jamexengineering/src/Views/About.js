@@ -22,7 +22,7 @@ const About = () =>{
 
                         {/*===============================Section==2===========================================================*/}
                         <div className='col-sm-12'>
-                            <div className='row'>
+                            <div className='row overview'>
                                 <div className='card' style={{border:'none'}}>
                                     <div className='card-body'>
                                         <div className='card-title'>Overview of Jamex Engineering</div>
@@ -78,48 +78,48 @@ const About = () =>{
                             </div>
                         </div>
 
-                        {/*===============================Section==4===========================================================*/}
-                        <div className='col-sm-12'>
-                            <div className='row'>
-                                <div className='card' style={{border:'none'}}>
-                                    <div className='card-body'>
-                                        <div className='card-title'>Our History</div>
-                                        <div className='card-text'>
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its layout. The point of
-                                            using Lorem Ipsum is that it has a more-or-less normal distribution of
-                                            letters, as opposed to using 'Content here, content here', making it
-                                            look like readable English.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {/*/!*===============================Section==4===========================================================*!/*/}
+                        {/*<div className='col-sm-12'>*/}
+                        {/*    <div className='row'>*/}
+                        {/*        <div className='card' style={{border:'none'}}>*/}
+                        {/*            <div className='card-body'>*/}
+                        {/*                <div className='card-title'>Our History</div>*/}
+                        {/*                <div className='card-text'>*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                    It is a long established fact that a reader will be distracted by the*/}
+                        {/*                    readable content of a page when looking at its layout. The point of*/}
+                        {/*                    using Lorem Ipsum is that it has a more-or-less normal distribution of*/}
+                        {/*                    letters, as opposed to using 'Content here, content here', making it*/}
+                        {/*                    look like readable English.*/}
+                        {/*                </div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
 
                         {/*===============================Section==5===========================================================*/}
                         <div className='col-sm-12'>
@@ -136,37 +136,33 @@ const About = () =>{
 
                                 {/*=====================================================================================*/}
                                 <div className='row directorsList'>
-                                    <div className='col-sm-12 col-md-6 col-lg-3'>
+                                    <div className='col-sm-6 col-md-6 col-lg-6'>
                                         <div className='card'>
                                             <div className='card-body'>
-                                                <div className='card-img-top'><img src={safety} alt='safety'/></div>
                                                 <div className='card-text'>Uduma James</div>
                                             </div>
                                         </div>
                                     </div>
                                     {/*==================================================================================*/}
-                                    <div className='col-sm-12 col-md-6 col-lg-3'>
+                                    <div className='col-sm-6 col-md-6 col-lg-6'>
                                         <div className='card'>
                                             <div className='card-body'>
-                                                <div className='card-img-top'><img src={safety} alt='safety'/></div>
                                                 <div className='card-text'>Okala O. Okala Uduma</div>
                                             </div>
                                         </div>
                                     </div>
                                     {/*==================================================================================*/}
-                                    <div className='col-sm-12 col-md-6 col-lg-3'>
+                                    <div className='col-sm-6 col-md-6 col-lg-6'>
                                         <div className='card'>
                                             <div className='card-body'>
-                                                <div className='card-img-top'><img src={safety} alt='safety'/></div>
                                                 <div className='card-text'>Okala Okala Uduma</div>
                                             </div>
                                         </div>
                                     </div>
                                     {/*==================================================================================*/}
-                                    <div className='col-sm-12 col-md-6 col-lg-3'>
+                                    <div className='col-sm-6 col-md-6 col-lg-6'>
                                         <div className='card'>
                                             <div className='card-body'>
-                                                <div className='card-img-top'><img src={safety} alt='safety'/></div>
                                                 <div className='card-text'>Olua Amogu Owunka</div>
                                             </div>
                                         </div>
@@ -178,7 +174,7 @@ const About = () =>{
 
                         {/*===============================Section==6===========================================================*/}
                         <div className='col-sm-12'>
-                            <div className='row'>
+                            <div className='row culture'>
                                 <div className='card' style={{border:'none'}}>
                                     <div className='card-body'>
                                         <div className='card-title'>Our culture</div>
@@ -211,13 +207,149 @@ const About = () =>{
                             </div>
                         </div>
 
+                        {/*=====================================================================================================*/}
+
+                        {/*<div className='col-sm-12'>*/}
+                        {/*    <div className='row mid'>*/}
+                        {/*        <div className='card'>*/}
+                        {/*            /!*<div className='card-body'>*!/*/}
+                        {/*            /!*    /!*<div className='card-title'>Partnership</div>*!/*!/*/}
+                        {/*            /!*    <div className='card-text'> </div>*!/*/}
+                        {/*            /!*</div>*!/*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+
+                        {/*==========================================================================================================================================*/}
+
                         {/*===============================Section==7===========================================================*/}
                         <div className='col-sm-12'>
-                            <div className='row'>
-                                <div className='card'>
+                            <div className='row achievements'>
+                                <div className='card' style={{border:'none'}}>
                                     <div className='card-body'>
-                                        <div className='card-title'>Our Achivements</div>
-                                        <div className='card-text'> </div>
+                                        <div className='card-title'>Our Achievements</div>
+
+                                        {/*=========================================================================*/}
+                                        <div className='row achieved'>
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Successful Rural Electrification of Uzii town in Ideato Local Government Area, Imo State, bringing reliable electricity to the community and improving the quality of life for its residents.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Completed Rural Electrification of Mkpanak Community, Ibeno Local Government Area, Akwa Ibom State, empowering the community with access to electricity and enhancing economic opportunities.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Accomplished Rural Electrification of Essit Udua in Ibeno Local Government Area of Akwa Ibom State, providing electricity to a previously underserved area and fostering development.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Installed a 500KVA, 33/11KV transformer for Mobil Producing Nigeria Unlimited at Ibeno Jetty, facilitating efficient power distribution and supporting the company's operations.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Successfully installed 2 Nos 500KVA, 33/11KV transformers at the sand field in Ibeno for Mobil Producing Nigeria Unlimited, ensuring a reliable power supply for the company's activities.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Completed the Perimeter Fence Lighting project for Mobil operational base in Ibeno, Akwa Ibom State, enhancing security and safety at the facility.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Installed a 1 MVA 33/11KV transformer for Mobil Producing Nigeria Unlimited Airstrip, enabling efficient power supply to support aviation activities.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Completed the Fence Lighting project for Mobil Producing Nigeria Unlimited Airstrip, enhancing visibility and safety during nighttime operations.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Successfully installed a 500KVA, 11/0.415KV transformer for Mobil Pegasus Primary & Secondary at St Gregory Street, Eket, Akwa Ibom State, improving access to electricity for educational facilities.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Installed a 15MVA, 33/11KV transformer for Mobil Management Housing Estate, ensuring a stable power supply for the residential area.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Completed the installation of a 500KVA, 11/0.415KV transformer for Mobil Guest House in Eket, Akwa Ibom State, providing reliable electricity for hospitality services.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Successfully installed a 500KVA, 11/0.415KV transformer for Esa Akpan Housing Estate, improving living conditions and promoting community development.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='card'>
+                                                <div className='card-body'>
+                                                    <div className='card-text'>
+                                                        Major contractor to West African Pipelines on the supply of flanges, contributing to the successful implementation of pipeline projects in the region.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -225,11 +357,99 @@ const About = () =>{
 
                         {/*===============================Section==8===========================================================*/}
                         <div className='col-sm-12'>
-                            <div className='row'>
-                                <div className='card'>
+                            <div className='row clientBody'>
+                                <div className='card' style={{border:'none'}}>
                                     <div className='card-body'>
                                         <div className='card-title'>Our Clients</div>
-                                        <div className='card-text'> </div>
+                                        <div className='row clients'>
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            West African Pipelines
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Mobil Producing Nigeria Unlimited
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Uzii town in Ideato Local Government Area, Imo State
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Mobil Pegasus primary & secondary School
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Mobil Management Housing Estate
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Esa Akpan Housing Estate.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Ibeno Local Government Area of Akwa Ibom State.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Eket, AkwaIbom State
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -237,27 +457,116 @@ const About = () =>{
 
                         {/*===============================Section==9===========================================================*/}
                         <div className='col-sm-12'>
-                            <div className='row'>
+                            <div className='row community'>
                                 <div className='card'>
                                     <div className='card-body'>
                                         <div className='card-title'>Community Outreach</div>
-                                        <div className='card-text'> </div>
+                                        <div className='card' style={{border:'none'}}>
+                                            <div className='card-body'>
+                                                <div className='card-text'>
+                                                    These achievements, clients, and community outreach efforts demonstrate our commitment to sustainable development, community empowerment, and excellence in our projects.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/*=====================================================================*/}
+                                        <div className='row outreach'>
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Engaged with the local community during the rural electrification projects, seeking their input and addressing their needs and concerns.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Provided training and employment opportunities for local residents during the construction and installation phases of the projects, promoting skill development and job creation.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Supported community development initiatives, such as sponsoring educational programs, health camps, and infrastructure projects, to uplift the living standards of the communities in which we operated.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Promoted environmental sustainability by implementing eco-friendly practices and collaborating with local organizations for conservation efforts.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Engaged in regular communication with community leaders to maintain open dialogue and foster a positive relationship with the communities.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Conducted safety awareness programs and workshops for community members, emphasizing the importance of safety in the use of electricity and other activities.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+                                            <div className='col-sm-12 col-md-6'>
+                                                <div className='card'>
+                                                    <div className='card-body'>
+                                                        <div className='card-text'>
+                                                            Contributed to the social and economic growth of the regions by providing a reliable power supply, which attracted investment and boosted local businesses.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*=======================================================*/}
+
+
+                                        </div>
+                                        {/*=====*/}
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/*===============================Section==9===========================================================*/}
-                        <div className='col-sm-12'>
-                            <div className='row'>
-                                <div className='card'>
-                                    <div className='card-body'>
-                                        <div className='card-title'>Partnership</div>
-                                        <div className='card-text'> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className='col-sm-12'>*/}
+                        {/*    <div className='row'>*/}
+                        {/*        <div className='card'>*/}
+                        {/*            <div className='card-body'>*/}
+                        {/*                <div className='card-title'>Partnership</div>*/}
+                        {/*                <div className='card-text'> </div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
 
                             {/*ending of section whole row closing tag after this*/}
                     </div>

@@ -15,6 +15,7 @@ import Services from "../Services";
 import Contact from "../Contact";
 import Projects from "../Projects";
 import Values from "../Values";
+import SendEmail from "../sendEmail.php";
 // ================Image imports==============
 import logo from '../../img/dummy_logo.png';
 
@@ -122,7 +123,7 @@ function HeaderContent() {
 const navLinkStyles = ({isActive}) => {
     return{
         // blue when active , black when not
-        color: isActive ? 'blue' : 'black',
+        color: isActive ? 'darkblue' : 'black',
         // bold when active, normal when not
         fontWeight: isActive ? 'bold' : 'normal',
     }
@@ -221,6 +222,7 @@ const Header = () => {
                     <Route exact path="/contact" element={<Contact />} />
                     <Route exact path="/project" element={<Projects />} />
                     <Route exact path="/value" element={<Values />} />
+                    <Route exact path="/sendEmail.php" element={<SendEmail />} />
                 </Routes>
             </BrowserRouter>
         </>

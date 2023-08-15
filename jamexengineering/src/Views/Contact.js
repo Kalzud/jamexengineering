@@ -104,17 +104,18 @@ const Contact = () => {
                 <div className='col-sm-12'>
                     {/*last part=======================================================================================*/}
                     <div className='row contactBottom'>
-                        <div className='col-sm-12 col-md-6'>
+                        <div className='col-sm-12 col-md-12'>
                             <div className='card colCard' style={{border:"none"}}>
                                 <div className='card-body'>
                                     <div className='card-text'>
                                         Here at Jamex Engineering and construction we strive to
                                         make ourselves easily accessible so you could contact us
                                         on any of the above mediums or follow any of our social
-                                        media pages and give us a message there. Likewise you
-                                        could simply write a message detailing the area you need help
-                                        with right in the message box beside or below. Remember to
-                                        put in the correct Email, Number and Name.
+                                        media pages and give us a message there.
+                                        {/*Likewise you*/}
+                                        {/*could simply write a message detailing the area you need help*/}
+                                        {/*with right in the message box beside or below. Remember to*/}
+                                        {/*put in the correct Email, Number and Name.*/}
                                         Thank you very much.
                                         {/*<ul>*/}
                                         {/*    <li><i className="fa fa-youtube"></i>Youtube</li>*/}
@@ -127,31 +128,31 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-sm-12 col-md-6'>
-                            <div className='card colCard' style={{border:"none"}}>
-                                <div className='card-body'>
-                                    <form>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleFormControlInput1">Name</label>
-                                            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="name"/>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleFormControlInput1">Email Address</label>
-                                            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleFormControlInput1">Phone Number</label>
-                                            <input type="tel" className="form-control" id="exampleFormControlInput1" placeholder="+234 (0)706699401"/>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleFormControlTextarea1">Message</label>
-                                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"> </textarea>
-                                        </div>
-                                        <button type="submit" className="btn btn-primary">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className='col-sm-12 col-md-6'>*/}
+                        {/*    <div className='card colCard' style={{border:"none"}}>*/}
+                        {/*        <div className='card-body'>*/}
+                        {/*            <form action='sendEmail.php' method='post'>*/}
+                        {/*                /!*<div className="form-group">*!/*/}
+                        {/*                /!*    <label htmlFor="exampleFormControlInput1">Name</label>*!/*/}
+                        {/*                /!*    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="name"/>*!/*/}
+                        {/*                /!*</div>*!/*/}
+                        {/*                <div className="form-group">*/}
+                        {/*                    <label htmlFor="exampleFormControlInput1">Email Address</label>*/}
+                        {/*                    <input name='email' type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />*/}
+                        {/*                </div>*/}
+                        {/*                <div className="form-group">*/}
+                        {/*                    <label htmlFor="exampleFormControlInput1">Phone Number</label>*/}
+                        {/*                    <input name='subject' type="tel" className="form-control" id="exampleFormControlInput1" placeholder="+234 (0)706699401"/>*/}
+                        {/*                </div>*/}
+                        {/*                <div className="form-group">*/}
+                        {/*                    <label htmlFor="exampleFormControlTextarea1">Message</label>*/}
+                        {/*                    <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="3"> </textarea>*/}
+                        {/*                </div>*/}
+                        {/*                <button type="submit" name="sendEmail" className="btn btn-primary">Submit</button>*/}
+                        {/*            </form>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
 
                 </div>

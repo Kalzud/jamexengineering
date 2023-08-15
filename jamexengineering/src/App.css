@@ -31,7 +31,7 @@
     height: 90px;
 }
 .MenuIcon {
-    color: blue;
+    color: darkblue;
     cursor: pointer;
     padding-bottom: 50px;
     padding-left: 50%;
@@ -46,7 +46,7 @@
     font-size: x-large;
     color: #333;
     padding-left: 6px;
-    border-left: 2px solid blue;
+    border-left: 2px solid darkblue;
 }
 .NavItem:hover{
     border-left: 10px solid lawngreen;
@@ -78,7 +78,7 @@
     font-size: x-large;
     padding-top: 20px;
     text-decoration: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid darkblue;
 }
 .NavItem_mini_side:hover{
     border-bottom: 10px solid lawngreen;
@@ -92,7 +92,7 @@
     margin-top: 0;
 }
 /*================================== 1st section ============================*/
-.firstDivBackground{
+.firstDivBackground .top{
     background-image: url("./img/construction-site.jpg");
     background-size: cover;
     padding-top: 1px;
@@ -124,20 +124,27 @@
 }
 .sloganButton button{
     margin-top: 8px;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-bottom: 8px;
     padding-bottom: 0;
-    border: 3px solid darkblue;
+    /*border: 3px solid orangered;*/
+    border-radius: 15px;
+    /*margin-left: 12px;*/
+    /*margin-top:5px;*/
+    color: orangered;
+    font-size: large;
+    /*background-color: black;*/
 }
 .sloganButton button:hover{
-    background-color: blue;
-    color: white;
+    /*background-color: blue;*/
+    /*color: white;*/
+    border: 1px solid orangered;
     width: 200px;
     transition: all 0.3s;
 }
 /*====================================2nd Section=======================*/
 .value{
-    background-color: grey;
+    /*background-color: grey;*/
     min-height: 800px;
     padding-top: 1px;
     margin-top: -1px;
@@ -165,7 +172,7 @@
     background-color: transparent;
 }
 .valueHeader h1{
-   /*color: darkblue;*/
+    /*color: darkblue;*/
     font-size: xxx-large;
     /*margin-bottom: -50px;*/
 }
@@ -196,10 +203,11 @@
 /*    padding-left: 20px;*/
 /*}*/
 .valueList .card{
-    background-color: grey;
+    /*background-color: grey;*/
     margin-top: 20px;
     height: 400px;
     overflow-y: scroll;
+    box-shadow: 0 0 5px black;
     /*width: 100%;*/
 }
 .valueListCard::-webkit-scrollbar{
@@ -252,7 +260,7 @@
 .service{
     padding-right: 30px;
     padding-left: 30px;
-    background-color: grey;
+    background-color: whitesmoke;
 }
 .blueBox{
     min-height: 400px;
@@ -327,38 +335,106 @@
     /*margin-top: 150px;*/
     padding-left: 30px;
     padding-right: 30px;
-    background-color: grey;
+    /*background-color: grey;*/
+    color: darkblue;
 }
 .project-title{
     margin-top: 50px;
     width: 100%;
-    background-color: grey;
+    background-color: transparent;
 }
 .project-title .card-body{
-    background-color: grey;
+    background-color: transparent;
 }
 .project-title .card-title{
     display: flex;
     justify-content: center;
-    font-size: 90px;
-    color:black;
+    /*font-size: ;*/
+    /*color:black;*/
 }
-.pImg img{
-    width: 100%;
-    height: 100%;
+.project-title .card-title h1{
+    font-size: xxx-large;
 }
-.l{
-    margin-top: 30px;
-    border-radius: 120px;
-    /*padding-right: 20px;*/
-    /*padding-left: 20px;*/
+/*.project-preambleHome{*/
+/*    min-height: 10px;*/
+/*}*/
+.projectListHome{
+    /*margin-top: -5px;*/
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.l .card-body{
-    /*border-radius: 120px;*/
-}
-/*================================================================ABOUT=============================================================================*/
-.aboutPage{
+.projectListHome .card{
+    margin-bottom: 10px;
     background-color: grey;
+}
+.projectListHome .card .card-body{
+    background-color: grey;
+}
+.pBtn button{
+    color: orangered;
+}
+.projectLinkBtn2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.projectLinkBtn2 button{
+    border: 2px solid white;
+    border-radius: 15px;
+    /*margin-left: 12px;*/
+    /*margin-top:5px;*/
+    color: orangered;
+    background-color: black;
+}
+.projectLinkBtn2 button:hover{
+    width: 300px;
+    border: 2px solid orangered;
+    /*color: white;*/
+    background-color: white;
+}
+/*===========================5th section============================*/
+.choose{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*background-color: darkgrey;*/
+    color: darkblue;
+}
+.choose-title h1{
+    font-size: xxx-large;
+}
+.choose .card-body{
+    /*background-color: darkgrey;*/
+}
+.choose-text{
+    box-shadow: 0 0 10px black;
+}
+.reasons{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.reasons .card{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    background-color: darkgrey;
+    box-shadow: 0 0 10px black;
+}
+.reasons .card .card-body{
+    background-color: darkgrey;
+}
+
+
+/*================================================================ABOUT=============================================================================*/
+/*.mid .card{*/
+/*    background-image: url("./img/lightBulb.jpg");*/
+/*    min-height: 300px;*/
+/*    width: 100%;*/
+/*}*/
+.aboutPage{
+    /*background-color: grey;*/
     color: darkblue;
     /*border: 3px solid yellow;*/
 }
@@ -377,7 +453,7 @@
     padding-right: 30px;
 }
 .aboutTop .top{
-    background-image: url("./img/bridge.jpg");
+    background-image: url("./img/tower.jpg");
     background-size: cover;
     min-height: 500px;
     width: 100%;
@@ -386,10 +462,26 @@
     /*background-repeat: no-repeat;*/
 }
 .aboutTop .insideTop{
-    margin-top: 10em;
+    margin-top: 20em;
     max-width: 600px;
     max-height: 300px;
-    margin-left: 5em;
+    margin-left: 3em;
+    background-color: transparent;
+}
+.aboutTop .insideTop .card-body{
+    /*color: black;*/
+
+    background-color: rgba(0,0,0,0.2);
+}
+.aboutTop .insideTop .card-body .card-title{
+    font-size: 80px;
+}
+/*=====================================Section 2==*/
+.overview .card{
+    background-color: transparent;
+}
+.overview .card .card-body{
+    background-color: transparent;
 }
 /*=====================================Section 3==*/
 .target .card{
@@ -465,18 +557,23 @@
     justify-content: center;
 }
 .directorsList{
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 .directors .card{
     border: none;
     color: darkblue;
+    background-color: transparent;
+}
+.directors .card .card-body{
+    background-color: transparent;
 }
 .directorsList .card{
     color: white;
     margin-top: 10px;
-    margin-bottom: 5px;
-    height: 200px;
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: grey;
 }
 .directorsList .card-body{
     /*display: flex;*/
@@ -489,6 +586,64 @@
 }
 .directors .card-img-top img{
     width: 100%;
+}
+/*========================================Section 6==*/
+.culture .card{
+    background-color: transparent;
+}
+.culture .card .card-body{
+    background-color: transparent;
+}
+/*========================================Section 7==*/
+.achievements .card{
+    background-color: transparent;
+}
+.achievements .card .card-body{
+    background-color: transparent;
+}
+.achieved .card{
+    margin-bottom: 10px;
+    border-left: 3px solid orangered;
+    border-right: 3px solid orangered;
+    background-color: grey;
+}
+.achieved .card .card-body{
+    background-color: grey;
+}
+.achievements{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*========================================Section 8==*/
+.clientBody .card{
+    background-color: transparent;
+}
+.clientBody .card .card-body{
+    background-color: transparent;
+}
+.clients .card{
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px black;
+    height: 150px;
+    background-color: dimgrey;
+}
+.clients .card .card-body{
+    background-color: dimgrey;
+}
+/*========================================Section 9==*/
+.community .card{
+    background-color: transparent;
+    border: none;
+}
+.community .card .card-body{
+    background-color: transparent;
+}
+.outreach .card{
+    margin-bottom: 10px;
+    background-color: grey;
+}
+.outreach .card .card-body{
+    background-color: grey;
 }
 /*============================================================== CONTACT =======================================================================================================*/
 .contactPage{
@@ -576,7 +731,7 @@
 .serviceSub{
     padding-left: 10%;
     padding-right: 10%;
-    background-color: grey;
+    /*background-color: grey;*/
 }
 .serviceSub .card{
     margin-top: 20px;
@@ -600,7 +755,7 @@
 .serviceListing{
     padding-left: 30px;
     padding-right: 30px;
-    background-color: grey;
+    /*background-color: grey;*/
 }
 .serviceListing .col-sm-12 .card{
     margin-top: 20px;
@@ -610,7 +765,7 @@
     overflow-y: scroll;
 }
 .serviceListing .card .card-body{
-    background-color: grey;
+    /*background-color: grey;*/
 }
 .serviceListing .card .card-body img{
     width: 100%;
@@ -640,7 +795,7 @@
     color: darkblue;
 }
 .valueTop .top{
-    background-image: url("./img/tower.jpg");
+    background-image: url("./img/bridge.jpg");
     background-size: cover;
     min-height: 400px;
     width: 100%;
@@ -665,7 +820,7 @@
 .valueBottom{
     padding-right: 5px;
     padding-left: 5px;
-    background-color: darkgrey;
+    /*background-color: darkgrey;*/
 }
 .valueBottom .card{
     margin-top: 20px;
@@ -698,7 +853,12 @@
         height: 300px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px){
+    .clients .card{
+        height: 90px;
+    }
+}
+@media (max-width: 767px) {
     /*==================================================Header small screen stuff===============================*/
     .MenuIcon{
         padding-top: 0;
@@ -724,7 +884,7 @@
         font-size: x-large;
         padding-top: 20px;
         text-decoration: none;
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid darkblue;
     }
     .NavItem_mini:hover{
         border-bottom: 10px solid lawngreen;
@@ -774,6 +934,9 @@
     .target .card{
         margin-top: 5em;
         margin-left: 0;
+    }
+    .clients .card{
+        height: 100px;
     }
     /*==========================================Contact small screen stuff====================================*/
     .contactTop .card{
@@ -830,4 +993,22 @@
         transition: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
